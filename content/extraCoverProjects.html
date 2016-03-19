@@ -1,0 +1,38 @@
+{% for res in site.content.walk_resources_sorted_by_date()  %}
+   {% if 'Featured' in res.meta.tags %}
+   {% if 'Cover' in res.meta.tags %}
+   <!--- no hago nada -->
+     {% else %}
+       <div class="row project-row">
+        {% from "macros.j2" import render_image_video with context %}
+        {{ render_image_video(res) }}
+
+        <div class="col-md-3 col-md-offset-1 project-info col-md-pull-7">
+          <h2>{{ res.meta.title }} </h2>
+           {{res.meta.description}} 
+
+           <div class="year">
+              {{ res.meta.year }} 
+            </div>
+
+           <div class="extra">
+            {% if res.meta.client %}                    
+               Client: {{ res.meta.client }}        
+            {% endif %}        
+           </div>
+
+           <div class="taglist">
+            {% for tag in res.meta.tags %}                    
+                <a href="/portfolio/tags/{{ tag }}.html" class="tag-list"> {{ tag }} </a> /                    
+            {% endfor %}        
+           </div>
+           
+
+           <div class="read-more" style="text-align:right; margin-top:2em">
+             <a href="{{'/portfolio/'+ res.meta.folder + '.html'}}" class="read-more" > [read more...] </a>
+           </div>
+        </div>      
+      </div>   
+      {% endif %} 
+    {% endif %}     
+{% endfor %}

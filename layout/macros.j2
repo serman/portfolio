@@ -1,0 +1,76 @@
+{% macro render_excerpt(res, class=None) %}
+{% refer to res.url as post %}
+<article {{'class='~class if class }}>
+<h3><a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a></h3>
+<a href="{{ content_url(res.url) }}">{{ post.image|markdown|typogrify }}</a>
+{{ post.excerpt|markdown|typogrify }}
+<time datetime="{{ res.meta.created.strftime('%Y-%m-%d') }}">
+    Posted: {{ res.meta.created.strftime('%a, %d %b %Y') }}
+</time>
+</article>
+{% endmacro %}
+
+{% macro render_nav(menu, cls=None) -%}
+{% if menu -%}
+    <ul class="nav navbar-nav">
+        {% for item in menu -%}
+        {% set active = False -%}
+        {% if item.type == 'page' -%}
+            {% set active = (resource.url ==
+                site.content.resource_from_relative_path(item.url).url) -%}
+        {% else -%}
+            {% set active = (node ==
+                site.content.node_from_relative_path(item.url)) -%}
+        {%- endif %}
+        {% set classes = ['menu-link', 'white'] -%}
+        {% do classes.append('active') if active -%}
+        {% do classes.append(item.css_class) if item.css_class -%}
+        <li>
+            <a title="{{ item.description }}"
+                class="{{ classes|join(' ') }}"
+                href="{{ content_url(item.url) }}">
+                {{ item.name }}
+            </a>
+        </li>
+        {%- endfor %}
+    </ul>
+{%- endif %}
+
+{%- endmacro %}
+
+
+
+{% macro render_project_images(mresource, video=None,platform=None, position=1) -%}
+                <div class="images-container">                    
+                        {% for res in mresource %}
+                            <div class="image-container">                                
+                                <img src="{{ media_url('images/projects/')}}{{resource.meta.folder}}/slide/{{res}}.jpg" class="img-responsive">
+                            </div>
+                        {% endfor %}                    
+                </div>                
+            
+
+
+{%- endmacro %}
+
+
+{% macro render_image_video(res) -%}
+    <div class="col-md-7 col-md-push-4" >
+      {% if res.meta.cover %}                    
+           <a href="{{'/portfolio/'+ res.meta.folder + '.html'}}" class="read-more" > 
+
+            {% if 'mp4' in res.meta.cover %}
+            <video autoplay="autoplay" loop="loop" width="100%" poster="{{ media_url('images/projects/') + res.meta.folder +'/'+ res.meta.cover + '.jpg' }}">
+              <source src="{{ media_url('images/projects/') +  res.meta.folder +'/'+ res.meta.cover}}" type="video/mp4" />
+              <img class="img-responsive" src="{{ media_url('images/projects/') + res.meta.folder +'/'+ res.meta.cover + '.jpg' }}" />
+            </video>
+            {% elif 'gif' in res.meta.cover %}
+              <img class="img-responsive" style="width:100%" src="{{ media_url('images/projects/') + res.meta.folder +'/'+ res.meta.cover }}" />
+            {%endif%}
+           </a>       
+        {% else %}   
+      <a href="{{'/portfolio/'+ res.meta.folder + '.html'}}" class="read-more" > <img class="img-responsive" src="{{ media_url('images/projects/') + res.meta.folder + '/slide/slide1.jpg'}}" /> </a>
+       {% endif %}   
+    </div>  
+
+{%- endmacro %}

@@ -1,0 +1,16 @@
+---
+default_block: main
+title: BASIC - Portfolio
+description: Portfolio page in the BASIC hyde template
+---
+
+{% for tag, meta in site.tagger.tags %}
+
+<h1>*{{ tag }}*</h1>
+{% for res in resource.node.walk_resources_tagged_with(tag) %}
+  * [{{ res.slug|capitalize|replace("-"," ") }}]({{ res.full_url }}) \
+    ({{ res.name }})
+    ({{ res.meta.description }})
+{% endfor %}
+
+{% endfor %}

@@ -1,0 +1,67 @@
+---
+extends: base.j2
+title: Sergio Galán. Many projects.
+description: Portfolio page 
+
+
+
+{% block main %} 
+<div id="menu-list" class="row">
+    <div class="col-xs-5 ">
+        <div class="">
+            This is a comprehensive list with many of the projects I’ve done in the last years. You can filter by Tags. 
+        </div>
+    </div>
+    
+    <div class="col-xs-7" >
+        <div>
+        
+        <a href="/portfolio/index.html" class="button  button-on "> Show all </a> /
+        {% for tag in featured_tags  %}
+            {% if 'Cover' == tag %}
+            {% else %}
+            <a href="/portfolio/tags/{{tag}}.html" class="loop_{{loop.index}}"> {{tag}} </a> / 
+            {% endif %}
+        {% endfor %}
+     
+        </div>
+    </div>
+</div>
+ <div class="row">  
+{% for res in site.content.walk_resources_sorted_by_date()  %}   
+		<div class="col-xs-12 col-md-6 project_grid">
+            <div class="row">
+            <div class="col-xs-6">  
+                <!--<div class="project_image" style="background-size: cover; background-image: url( {{ media_url('images/projects/')+ res.meta.folder + '/grid_img.jpg'}} ); "> </div> -->
+            <a href="{{'/portfolio/'+ res.meta.folder + '.html'}}" class="a_grid" >
+            <img src="{{ media_url('images/projects/')+ res.meta.folder + '/grid_img.jpg'}}" class="img-responsive" style="max-width:110%;">
+            </a>
+            </div>
+            <div class="col-xs-6 "> 
+                <div class="info-container">
+                    <a href="{{'/portfolio/'+ res.meta.folder + '.html'}}" class="a_grid">
+                    <h2 class="project-title"> 
+                        {{ res.meta.title }} </h2> 
+                    </a>    
+                    <div class="project-description"> 
+                            {{ res.meta.description | truncate(200)}} 
+                             <span class="readMore"> 
+                             <a href="{{'/portfolio/'+ res.meta.folder + '.html'}}" class="a_grid" > [read+] </a>
+                            </span> 
+                    </div>    
+                    <div class="project-year"> 
+                            {{ res.meta.year }} 
+                    </div>    
+                     
+                </div>  
+            </div>
+                     
+            </div>
+        </div>
+        {% if loop.index%2==0 %}
+                       <div class="clearfix visible-md-block visible-lg-block"></div>
+        {% endif %}
+
+{% endfor %}
+ </div>   
+{% endblock main %}

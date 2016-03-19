@@ -1,0 +1,212 @@
+!!python/unicode 'about.html': [macros.j2, base.j2, analytics.j2]
+!!python/unicode 'blog/angry-post.html': [blog.j2, macros.j2, base.j2, analytics.j2]
+!!python/unicode 'blog/atom.xml': [atom.j2, macros.j2]
+!!python/unicode 'blog/excerpts.xml': [atom.j2, macros.j2]
+!!python/unicode 'blog/happy-post.html': [blog.j2, macros.j2, base.j2, analytics.j2]
+!!python/unicode 'blog/index.html': [listing.j2, macros.j2, base.j2, analytics.j2]
+!!python/unicode 'blog/sad-post.html': [blog.j2, macros.j2, base.j2, analytics.j2]
+!!python/unicode 'blog/tags/angry.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'blog/tags/happy.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'blog/tags/sad.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'blog/tags/thoughts.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'extraCoverProjects.html': [macros.j2]
+!!python/unicode 'index.html': [macros.j2, base.j2, analytics.j2]
+!!python/unicode 'interaction-at-the-museum.html': [macros.j2]
+!!python/unicode 'list.html': [macros.j2, base.j2, analytics.j2]
+!!python/unicode 'lista.html': [macros.j2, base.j2, analytics.j2]
+!!python/unicode 'media/css/960.css': []
+!!python/unicode 'media/css/animate.min.css': []
+!!python/unicode 'media/css/bootstrap-theme.css': []
+!!python/unicode 'media/css/bootstrap-theme.css.map': []
+!!python/unicode 'media/css/bootstrap-theme.min.css': []
+!!python/unicode 'media/css/bootstrap-theme.min.css.map': []
+!!python/unicode 'media/css/bootstrap.css': []
+!!python/unicode 'media/css/bootstrap.css.map': []
+!!python/unicode 'media/css/bootstrap.min.css': []
+!!python/unicode 'media/css/bootstrap.min.css.map': []
+!!python/unicode 'media/css/demo.css': []
+!!python/unicode 'media/css/main 2.css': []
+!!python/unicode 'media/css/main.css': []
+!!python/unicode 'media/css/main.less': []
+!!python/unicode 'media/css/project_view.css': []
+!!python/unicode 'media/css/project_view.less': []
+!!python/unicode 'media/css/reset.css': []
+!!python/unicode 'media/css/site.css': []
+!!python/unicode 'media/css/syntax.css': []
+!!python/unicode 'media/css/text.css': []
+!!python/unicode 'media/js/libs/bootstrap.js': []
+!!python/unicode 'media/js/libs/bootstrap.min.js': []
+!!python/unicode 'media/js/libs/dd_belatedpng.js': []
+!!python/unicode 'media/js/libs/froogaloop.min.js': []
+!!python/unicode 'media/js/libs/jquery-1.11.2.min.js': []
+!!python/unicode 'media/js/libs/jquery-1.5.1.min.js': []
+!!python/unicode 'media/js/libs/jquery.textillate.js': []
+!!python/unicode 'media/js/libs/jquery.yoxview-2.21.min.js': []
+!!python/unicode 'media/js/libs/modernizr-1.7.min.js': []
+!!python/unicode 'media/js/libs/slides.min.jquery.js': []
+!!python/unicode 'media/js/libs/yoxview-init.js': []
+!!python/unicode 'media/js/pf.js': []
+!!python/unicode 'portfolio/am.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/backups/index 2.backup.html': [macros.j2, projects.j2,
+  base.j2, analytics.j2]
+!!python/unicode 'portfolio/backups/index 2.html.backup.html': [macros.j2, projects.j2,
+  base.j2, analytics.j2]
+!!python/unicode 'portfolio/boomboxSt.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/city-fireflies.html': [macros.j2, projects.j2, base.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/dcd.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/dreamhamar.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/f-lab.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/featured.html': [macros.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/fjord.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/galapagos.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/index.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/interaction-at-the-museum.html': [macros.j2, projects.j2,
+  base.j2, analytics.j2]
+!!python/unicode 'portfolio/lacosaradiactiva.html': [macros.j2, projects.j2, base.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/luzdanza.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/metadrop.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/minipong.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/momi.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/noisock.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/one-planet-mobility.html': [macros.j2, projects.j2, base.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/portfolio-project.sublime-project': [macros.j2, projects.j2,
+  base.j2, analytics.j2]
+!!python/unicode 'portfolio/portfolio-project.sublime-workspace': [macros.j2, projects.j2,
+  base.j2, analytics.j2]
+!!python/unicode 'portfolio/programalaplaza.html': [macros.j2, projects.j2, base.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/recollect.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/recordrevolver.html': [macros.j2, projects.j2, base.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/retag.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/robot-bq.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/semilla-boombox.html': [macros.j2, projects.j2, base.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/solconcer.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/sonicSkate.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/sonicskate.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/tags/4Client.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Art-or-whatever.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Art.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/City.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Client.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Concept.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Cover.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/DataViz.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Electronic.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Featured.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Frontend-dev.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Future-concept.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Game.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Interactive-Installation.html': [macros.j2, base.j2,
+  tagged_posts.j2, analytics.j2]
+!!python/unicode 'portfolio/tags/Interactive-installation.html': [macros.j2, base.j2,
+  tagged_posts.j2, analytics.j2]
+!!python/unicode 'portfolio/tags/Interactive.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/K3.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'portfolio/tags/Mobile.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Museum.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Non-digital.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Personal.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/School-K3.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Screen-based-design.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Screen-based.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Service Design.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Service design.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Service-design.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Shool-K3.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Speculative-Concept.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Student-Project.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Sustainability.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/UX-Product.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/UX.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'portfolio/tags/Urban.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Web-Mobile.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/Web.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/city.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/code.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/concept.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/game.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/hired.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/installation.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/interaction-design.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/interactive.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/k3.html': [macros.j2, base.j2, tagged_posts.j2, analytics.j2]
+!!python/unicode 'portfolio/tags/kindofArt.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/media art.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/mobile.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/non-digital.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/pro.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/screenBased.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/service design.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/service-design.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/social.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/sound.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/urban.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/tags/web.html': [macros.j2, base.j2, tagged_posts.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/transeuropeslow.html': [macros.j2, projects.j2, base.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/travelling-voices.html': [macros.j2, projects.j2, base.j2,
+  analytics.j2]
+!!python/unicode 'portfolio/unedviz.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/unicef.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/venmaquinas.html': [macros.j2, projects.j2, base.j2, analytics.j2]
+!!python/unicode 'portfolio/where-do-we-go.html': [macros.j2, projects.j2, base.j2,
+  analytics.j2]
+!!python/unicode 'press.html': [macros.j2, base.j2, analytics.j2]

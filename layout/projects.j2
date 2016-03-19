@@ -1,0 +1,60 @@
+{% extends "base.j2" %}
+{% block main %}
+<!-- Template con la vista de cada proyecto-->
+          
+<div class="projectView">
+    <div class="row">
+        <div class="col-md-8">
+            <h1> {{ resource.meta.title}} </h1>
+        </div>
+    </div>
+    <div class="row video-row">
+        <div class="col-md-12"> 
+            {% block video_header %}
+            {% if resource.meta.video_kind == 'vimeo' %}
+            <div class="js-video vimeo widescreen">
+                <iframe  id="vimeo-iframe" src="http://player.vimeo.com/video/{{resource.meta.video_id}}?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;api=1&amp;player_id=vimeo-iframe" width="560" height="315" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+            {%elif resource.meta.video_kind == 'youtube' %}
+            <div class="js-video  widescreen">
+                <iframe width="560" height="315" id="myytplayer" src="http://www.youtube.com/embed/{{resource.meta.video_id}}" modestbranding="1" frameborder="0" showinfo="0" enablejsapi="1" allowfullscreen></iframe>
+            </div>
+            {% endif %}
+            {% endblock video_header %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 info-section col-md-push-8">
+            <div class="description">
+                {{ resource.meta.description}}
+            </div>
+             {% block project_content %}
+             {% endblock project_content %}
+             <div class="extra-info">
+                <div>  <span> Tags: </span>
+                    {% for tag in resource.meta.tags  %}
+                    <a href="/portfolio/tags/{{tag}}.html" class="loop_{{loop.index}}"> {{tag}} </a> / 
+                    {% endfor %}
+                </div>
+                <div> <span> Team: </span>{{ resource.meta.team}} </div>
+                <div><span> Context: </span> {{ resource.meta.context}} </div>
+                <div><span> My Tasks: </span> {{ resource.meta.mytasks}} </div>
+                <div>{% if resource.meta.tools %} <span>  Tools: </span> {{ resource.meta.tools}} {% endif %}</div>
+            </div>
+         </div>
+
+        <div class="col-md-8 col-md-pull-4">
+             {% block extra_video %}{% endblock extra_video %}
+           {% block project_images %}
+           {% from "macros.j2" import render_project_images with context %}         
+            {{ render_project_images( resource.meta.images) }}  
+            {% endblock project_images %}
+
+              {% block extra_video2 %}{% endblock extra_video2 %}
+        </div>
+         
+       
+    </div>
+</div>
+
+{% endblock main %}

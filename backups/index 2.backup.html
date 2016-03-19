@@ -1,0 +1,28 @@
+---
+default_block: main
+title: BASIC - Portfolio
+description: Portfolio page in the BASIC hyde template
+---
+href="{{ content_url(res.url) }}"
+ {% for project in projects -%}
+
+<div class="grid_4" id="testborder"> 
+<div class="project_grid">
+<p class="project_image">
+</p><div style="background-image: url( {{ media_url('images/projects/') +'/'+ project.folder + '/grid_img.jpg'}} ); background-repeat: no-repeat; width:300px; height:280px;">
+<a href="{{'/portfolio/'+ project.folder + '.html'}}" class="a_grid" onmouseover="document.getElementById('where-do-we-go').style.display = 'block';" onmouseout="document.getElementById('where-do-we-go').style.display = 'none';">
+	     	    <span id="where-do-we-go" class="hidden_descr" style="display: none; "> 
+
+<br>
+
+{{ project.description }}
+
+<br>
+ 		</span>
+</a>
+
+</div>
+</div>
+</div>
+        
+    {%-	endfor %}

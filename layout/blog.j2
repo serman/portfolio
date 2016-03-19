@@ -1,0 +1,86 @@
+{% extends "base.j2" %}
+
+{% block main -%}
+<div class="projectView">
+                            
+
+        <div class="grid_12" style="border:none; margin:0px; padding:0px; height:200px;">
+        <img src="{{ media_url('images/projects/')}}/{{resource.meta.folder}}/header.png" style="border:none; margin:0px; padding: 0px" class="noborder">
+        <script> console.log("{{ resource.meta.folder }}")</script>
+        </div>
+         <div class="clear"></div>  
+             <div class="grid_4">
+            <div class="project_left_menu">
+                <p class="text_left_menu">
+                    <br>
+                    {{resource.meta.description}}
+                    <br>
+                </p>
+                <p class="text_left_menu">
+                    <br>
+                    <strong> Team:</strong> {{ resource.meta.team }}
+                    <br>
+                    <strong> Context: </strong>
+                    {{ resource.meta.context }}
+                    <br>
+                    <strong> My tasks</strong> {{ resource.meta.mytasks }}
+                    <br>
+                    <strong> Tools</strong> 
+                    {{ resource.meta.tools }}
+                    <br>
+                    <strong>Type: </strong> 
+                    {% for tag in resource.meta.tags %}                    
+                        <a href="/portfolio/tags/{{ tag }}.html"> {{ tag }} </a>
+                    
+                    {% endfor %}
+                </p>
+                <p class="details_left_menu">
+                    <a href="/portfolio">Back to projects </a>
+                </p>
+            </div>
+        </div>
+        <div class="grid_8">
+            <div class="main_content">
+                <div class="textblock">
+                    Life cycle analysis is a super-complex
+                    <a href="http://en.wikipedia.org/wiki/Life_cycle_assessment">methodology to asses environmental impacts</a>. Beatriz &amp; Irene are researchers on this field at the School of arquitecture.
+                    <br>
+                    <br>
+                    They both felt frustrated because the environmental thinking in society is limited to "this product is Green" and "This is not green" while actually things are much more complex.
+                    <br>
+                    <br>
+                    Therefore, they attended to visualizar with the goal of making something that let them comunicate the different impacts of our consumption society and create debate about it.
+                    <br>
+                    Visualizar is a collective workshop were people from different background join together. I personally felt very interested in the field so I joined them.
+                    <br>
+                    <br>
+                    During the 2 weeks workshop we decided to focus on our personal transport as a way to explain these different impacts. Otherwise is very hard to explain such a complex and messy issue if try to explain everything.
+                    <br>
+                    <br>
+                    My contribution here was to think a good way to explain the complexity of the environmental issues and also to code the whole prototype.
+                    <br>
+                    <br>
+                    The result tool is available at
+                    <a href="http://wheredowego.es"></a>
+                    <br>
+                    <br>
+                    <h2> Process and design motivations </h2>
+                    <br>
+                    I think interactivity is a good way to make people understand complex things. Instead of showing a big amount of static information. My goal was to create a tool that let people understand the impact issues through the interaction. So I wanted to make it playful and reactive to user changes.
+                    <br>
+                    <br>
+                    We decided we wanted to make it personal, helping people to think about their mobility decisions, so the tool is focused on building your own impact identity through a year.
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="fileGroup one-by-one" id="where-do-we-go-1">
+                    <div class="file">
+                        <img src="http://sergio.eclectico.net/secretary/files/projects/where-do-we-go/screen-shot-20110727-at-194145.png" width="490" height="366" alt="">
+                    </div>
+                </div>
+                <p style="text-align: center ; padding-top: 20px;">
+                    <a href="">&lt; Prev Project </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://sergio.eclectico.net/projects/city-fireflies"> Next Project &gt;</a>
+                </p>
+            </div><!-- fin bloque -->

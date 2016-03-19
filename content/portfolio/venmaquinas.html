@@ -1,0 +1,75 @@
+---
+title: Cómo ven las maquinas
+folder: venmaquinas
+year: 2014
+month: 12
+tags: 
+    - Featured
+    - Client
+    - Interactive-installation
+    - Cover
+client: MUNCYT
+description: An interactive installation about computer vision for the National Museum of Science and Technology in Madrid
+
+team: Sergio Galán, Guillermo Casado 
+context: Museum Commission 
+mytasks:  Concept, Design, Programming. 
+tools:  Openframeworks, processing
+default_block: ""
+video_id: 119766836
+video_kind: vimeo
+images: ['slide1','slide2','slide3','slide4','slide5','slide6', 'slide7']
+---
+
+
+{% block project_content %} 
+<div class="textblock">
+
+<p>
+This is an installation around the computer vision (CV) technologies. We use CV to integrate visitors in the installation content with different cameras. One of the key points is that the software driving the interaction doesn't remain hidden, it is visible and explained. The installation becomes a dialog between what it is actually doing and how it is doing it.
+</p>
+<p>
+The installation is split into two areas. While part of the content is shown in a big LED display at the main entrance of the museum, the "hidden control panel" is only visible once the visitors enter into the museum.
+</p>
+There are different modules or contents
+<ul>
+<li>  A face scanner. </li>
+<li>  Four screens explaining basic computer vision algorithms</li>
+<li>  A 5x2.5 meters screen showing games, reactive content or content generated from the face scanner </li>
+</ul>
+
+
+<h2> Commission: from brainstorming to production</h2>
+<p>
+The museum management contacted us to include some content related with interactive art and science in their new building. 
+<br/>
+When the museum was still in planning stage, we designed different proposals for the available spaces.
+</p>
+<br/>
+After the final design was approved with the museum team, Guillermo Casado and me were in charge of the engineering and development.The physical building of the spaces was subcontracted to another company. 
+
+The installation has a semi-permanent status, and will remain for a year.
+
+
+</p>
+<h2> Acknowledgments and references</h2>
+<p>
+The project wouldn't be possible without the great <a href="http://openframeworks.cc" target="_blank"> openFrameworks platform</a> 
+<p>
+We must explicitly acknowledge Adam Harvey's <a href="http://cvdazzle.com/" target="_blank"> CV Dazzle </a> project for which he developed a visualizer for the Haar Finder algorithm. We took that visualizer and adapted it to show images in real time.
+</p>
+
+Furthermore, the face scanner uses the famous <a href="https://github.com/kylemcdonald/ofxFaceTracker" target="_blank"> Face Tracker </a> developed by Kyle McDonald:
+
+
+<p>
+<br/>
+<a href="https://github.com/serman/muncyt/" target="_blank"> The project has been developed with Spanish taxpayer's money, so here it is the source code</a>
+
+</p>
+ </div>
+{% endblock project_content %}
+
+
+                
+  
